@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Novo Cade</title>
+</head>
+<style>
+	.container{
+		display: grid;
+		grid-template-rows: 10% 10% 20% 40% 10% 10%;
+		grid-template-columns: 100%;
+		grid-template-areas:"header"
+							"aside"
+							"main"
+							"footer";
+	}
+	header{
+		grid-area: header;
+	}
+	aside{
+		grid-area: aside;
+	}
+	main{
+		grid-area: main;
+	}
+	footer{
+		grid-area: footer;
+	}
+	
+	div#imgcade{
+		width: 100px;
+		height: 80%;
+		background: blue;
+	}
+	div.img_pesquisa{
+		background: blue;
+		width: 100px;
+		height: 100%;
+	}
+</style>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<button>Botao</button>
+				<button>Botao</button>
+				<button>Botao</button>
+				<button>Botao</button>
+				<button>Botao</button>
+			</nav>
+		</header>
+		
+	</div>
+</body>
