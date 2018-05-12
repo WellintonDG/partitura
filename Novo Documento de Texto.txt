@@ -1,0 +1,29 @@
+#include  <stdio.h>
+
+int main()
+{
+    int hi, hf, mi, mf, h, m;
+    if (hi > hf){
+        h = ((1440-((hi*60)+mi))+((hf*60)+mf));
+        m = h % 60;
+        h = h/60;
+        printf("%d HORAS E %d MINUTOS\n", h, m);
+    }else{
+        if (hf > hi){
+            h = ((hf*60)+mf)-((hi*60)+mi);
+            m = h % 60;
+            h = h/60;
+            printf("%d HORAS E %d MINUTOS\n", h, m);
+        }
+    }
+    if (hi == hf){
+        h = 0;
+        if (mi == mf){
+            printf("24 HORAS e 0 MINUTOS\n");
+        }else{
+            m = mf-mi;
+            printf("0 HORAS E %d MINUTOS\n", m);
+        }
+    }
+    return 0;
+}
